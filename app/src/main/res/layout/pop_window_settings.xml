@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_corners_white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="列表设置"
+            android:textColor="#333333"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:background="@mipmap/icon_close"
+            android:textColor="#666666"
+            android:textSize="30dp"
+            android:id="@+id/tv_pop_close"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#dddddd" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp" 
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="画面方向:"
+            android:textColor="#666666" 
+            android:textSize="15dp"
+            android:gravity="left|center_vertical"/>
+
+        <RadioGroup
+            android:id="@+id/rg_setting_orientation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rb_setting_hori"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@drawable/radio"
+                android:gravity="center"
+                android:text="横屏"
+                android:textColor="#666666"
+                android:textSize="17dp" />
+             <RadioButton
+                android:id="@+id/rb_setting_verti"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@drawable/radio"
+                android:checked="true"
+                android:gravity="center"
+                android:text="竖屏"
+                android:textColor="#666666"
+                android:textSize="17dp" />
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp" 
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="播放控制栏:"
+            android:textColor="#666666" 
+            android:textSize="15dp"
+            android:gravity="left|center_vertical"/>
+
+        <RadioGroup
+            android:id="@+id/rg_setting_controlbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rb_setting_controlbar_simple"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@drawable/radio"
+                android:gravity="center"
+                android:text="简易"
+                android:textColor="#666666"
+                android:textSize="17dp" />
+             <RadioButton
+                android:id="@+id/rb_setting_controlbar_advanced"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@drawable/radio"
+                android:checked="true"
+                android:gravity="center"
+                android:text="高级"
+                android:textColor="#666666"
+                android:textSize="17dp" />
+        </RadioGroup>
+    </LinearLayout>
+	<Button android:id="@+id/btn_confirm"
+	    android:layout_width="match_parent"
+	    android:layout_height="50dp"
+	    android:layout_marginTop="30dp"
+	    android:layout_marginBottom="20dp"
+	    android:background="@mipmap/btn_confirm"
+	    android:text="确定"
+	    android:textColor="#ffffff"
+	    android:textSize="20dp"
+	    android:layout_marginLeft="25dp"
+	    android:layout_marginRight="25dp"
+	    />
+</LinearLayout>

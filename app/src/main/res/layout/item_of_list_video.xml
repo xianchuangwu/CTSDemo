@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+    <ImageView
+        android:id="@+id/iv_item_icon"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/item_default_icon" />
+
+    <ImageButton
+        android:id="@+id/ibtn_item_delete"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:background="@mipmap/item_delete" />
+
+    <ImageButton
+        android:id="@+id/ibtn_item_download"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@id/ibtn_item_delete"
+        android:background="@mipmap/item_download" />
+
+    <TextView
+        android:id="@+id/tv_item_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv_item_icon"
+        android:layout_marginLeft="15dp"
+        android:layout_toLeftOf="@id/ibtn_item_download"
+        android:layout_toRightOf="@id/iv_item_icon"
+        android:text="Title"
+        android:textColor="#333333"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tv_item_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_item_title"
+        android:layout_alignRight="@id/tv_item_title"
+        android:layout_below="@id/tv_item_title"
+        android:layout_marginTop="10dp"
+        android:ellipsize="middle"
+        android:maxLines="2"
+        android:text="I am a long desc text.I am a long desc text.I am a long desc text.I am a long desc text."
+        android:textSize="13dp" />
+</RelativeLayout>
